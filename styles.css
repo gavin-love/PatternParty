@@ -33,10 +33,39 @@ hr {
   width: 74.5%;
 }
 
-.accordion_tabs_container {
+.accordion_container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+.accordion_tab {
+	max-width: 400px;
+	background: white;
+	margin: 0 auto;
+}
+
+.accordion_header {
+	cursor: pointer;
+  padding: 1.5rem;
+  background-color: goldenrod;
+}
+
+.accordion_header:hover {
+	background: purple;
+}
+
+.accordion_content {
+	display: none;
+	padding: 1.5rem;
+}
+
+.accordion_header::before {
+  background-color: lime
+}
+
+.active.accordion_header::before {
+	background-color: #FC6468;
 }
 
 .view_accordion_tabs_code {
