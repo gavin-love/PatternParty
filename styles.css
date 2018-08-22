@@ -10,6 +10,19 @@ h1, span, h3 {
   margin: 0;
 }
 
+img {
+  height: 300px;
+  width: 200px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+hr {
+  margin-left: 20px;
+  width: 74.5%;
+}
+
 header {
   display: flex;
   justify-content: space-between; 
@@ -28,20 +41,17 @@ header {
   display: inline-block;
 }
 
-hr {
-  margin-left: 20px;
-  width: 74.5%;
-}
-
 .accordion_container {
   width: 80%;
   margin: 0 auto;
-  text-align: center;
 }
 
-.accordion_tab {
-	max-width: 400px;
-	background: white;
+.accordion_tabs {
+  display: flex;
+}
+
+.accordion_contents {
+  display: flex;
 	margin: 0 auto;
 }
 
@@ -55,9 +65,17 @@ hr {
 	background: purple;
 }
 
+.accordion_content_flex {
+  display: flex;
+}
+
 .accordion_content {
 	display: none;
 	padding: 1.5rem;
+}
+
+.tab_one_img {
+  background-image: url('./images/icons8-gorilla-100.png');
 }
 
 .accordion_header::before {

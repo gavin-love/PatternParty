@@ -1,3 +1,5 @@
-$(".accordion_tab").on("click", ".accordion_header", function () {
-  $(this).toggleClass("active").next().slideToggle();
+$(".accordion_tabs").on("click", ".accordion_header", function () {
+  const tab = Array.from(this.classList)
+  console.log($(this).parent().next('article').children(`.${tab[1]}`))
+  $(this).parent().next('article').children(`.${tab[1]}`).slideToggle();
 });
