@@ -15,72 +15,32 @@
     <h3>Gavin Love</h3>
   </header>
   <main>
-    <section class="accordion_tabs_header">
-      <p class="accordion_tabs_header_content">ACCORDION TABS</p>
-      <hr class="accordion_tabs_header_content">
-    </section>
-    <section class="accordion_container">
-      <nav class="accordion_tabs">
-        <h3 class="accordion_header tab_one">Tab 1</h3>
-        <h3 class="accordion_header tab_two">Tab 2</h3>
-        <h3 class="accordion_header tab_three">Tab 3</h3>
-        <h3 class="accordion_header tab_four">Tab 4</h3>
-      </nav>
-      <article class="accordion_contents">
-        <div class="accordion_content tab_one">
-          <div class="accordion_content_flex">
-            <div>
-              <img class="tab_one_img">
-            </div>
-            <div>
-              <p>content title</p>
-              <hr>
-              <p>content body</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion_content tab_two">
-          <div class="accordion_content_flex">
-            <div>
-              <img class="tab_one_img">
-            </div>
-            <div>
-              <p>content title</p>
-              <hr>
-              <p>content body</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion_content tab_three">
-          <div class="accordion_content_flex">
-            <div>
-              <img class="tab_one_img">
-            </div>
-            <div>
-              <p>content title</p>
-              <hr>
-              <p>content body</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion_content tab_four">
-          <div class="accordion_content_flex">
-            <div>
-              <img class="tab_one_img">
-            </div>
-            <div>
-              <p>content title</p>
-              <hr>
-              <p>content body</p>
-            </div>
-          </div>
-        </div>
+    <section class="tabs">
+      <input type="radio" name="tabs" id="tabone" checked="checked">
+      <label for="tabone">Tab One</label>
+      <article class="tab">
+        <h1>Tab One Content</h1>
+        <p>this is ths shit in tab one</p>
+      </article>
+
+      <input type="radio" name="tabs" id="tabtwo">
+      <label for="tabtwo">Tab Two</label>
+      <article class="tab">
+        <h1>Tab Two Content</h1>
+        <p>this is the shit in tab two</p>
+      </article>
+
+      <input type="radio" name="tabs" id="tabthree">
+      <label for="tabthree">Tab Three</label>
+      <article class="tab">
+        <h1>Tab Three Content</h1>
+        <p>this is ths shit in tab three</p>
       </article>
     </section>
-    <button class="view_accordion_tabs_code">View Code</button>
   </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="./scripts.js"></script>
 
 </html>
+<!-- <button class="view_accordion_tabs_code">View Code</button> -->
