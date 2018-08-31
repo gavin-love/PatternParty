@@ -19,11 +19,34 @@ header {
   margin: 0 auto;
 }
 
+p {
+  width: 75%;
+}
+
 .tabs {
 	display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.img {
+ display: inline-block;
+}
+
+.tab_content {
+  display: inline-block;
+  position: absolute;
+}
+
+.img {
+  width: 20rem;
+  height: 100%;
+  background-image: url('./images/icons8-gorilla-100.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid lightgray;
+  margin: 0 1rem 0 1rem;
 }
 .tabs label {
 	order: 1; 
@@ -31,6 +54,7 @@ header {
 	padding: 1rem 2rem;
 	margin-right: 0.2rem;
   background: lightgrey;
+  width: calc(19% - 15px);
 }
 .tabs .tab {
   order: 2;
@@ -39,6 +63,7 @@ header {
 	display: none;
   padding: 1rem 1rem 1rem 0;
   background: #fff;
+  height: 400px;
 }
 .tabs input[type="radio"] {
 	display: none;
@@ -50,7 +75,7 @@ header {
 	display: block;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 70em) {
   .tabs .tab,
   .tabs label {
     order: initial;
