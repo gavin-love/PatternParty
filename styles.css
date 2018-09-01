@@ -75,6 +75,26 @@ p {
 	display: block;
 }
 
+.flexible_cards  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+}
+.cards {
+  border: 1px solid lime;
+  height: 200px;
+  flex-grow: 1;
+  width: 30%;
+}
+
+.c_one, .c_seven {
+  flex-grow: 2;
+}
+
 @media (max-width: 70em) {
   .tabs .tab,
   .tabs label {
