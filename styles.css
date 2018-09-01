@@ -75,24 +75,39 @@ p {
 	display: block;
 }
 
-.flexible_cards  {
+.flexible_cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 600px;
+  height: 800px;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid lightgray;
-}
-.cards {
-  border: 1px solid lime;
-  height: 200px;
-  flex-grow: 1;
-  width: 30%;
 }
 
-.c_one, .c_seven {
-  flex-grow: 2;
+.cards {
+  border: 1px solid lime;
+  background-image: url('./images/icons8-gorilla-100.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 240px;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+.c_one,
+.c_seven {
+  flex: 3 0 60%;
+}
+
+.c_two,
+.c_six {
+  flex: 1 0 30%;
+}
+
+.c_three,
+.c_four,
+.c_five {
+  flex: 1 0 30%;
 }
 
 @media (max-width: 70em) {
@@ -135,8 +150,8 @@ p {
   }
 
   ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    background: transparent;
 }
 }
 
