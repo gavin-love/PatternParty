@@ -43,7 +43,7 @@ p {
 .img {
   width: 20rem;
   height: 100%;
-  background-image: url('./images/icons8-gorilla-100.png');
+  background-image: url('./images/image.png');
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid lightgray;
@@ -80,17 +80,16 @@ p {
 .flexible_cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  height: 1500px;
   width: 80%;
   margin: 0 auto;
 }
 
 .cards {
-  border: 1px solid lime;
-  background-image: url('./images/icons8-gorilla-100.png');
+  border: 1px solid gray;
+  background-image: url('./images/image.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 50px;
+  background-position-x: -5px;
   height: 240px;
   margin: 10px 10px;
   padding: 10px;
@@ -99,17 +98,22 @@ p {
 .c_one,
 .c_seven {
   flex: 3 0 60%;
+  background-size: calc(110%) 210px;
+}
+
+.c_two, .c_three, .c_four, .c_five, .c_six {
+  background-size: calc(110%) 210px;
 }
 
 .c_two,
 .c_six {
-  flex: 1 0 30%;
+  flex: 1 0 29%;
 }
 
 .c_three,
 .c_four,
 .c_five {
-  flex: 1 0 30%;
+  flex: 1 0 29.6%;
 }
 
 /* -----------nav bar---------- */
@@ -151,7 +155,8 @@ nav .nav_links {
 
   .img {
     height: 50%;
-    width: 15rem;
+    width: calc(95%);
+    margin-bottom: 20px;
   }
 
   .tabs .tab {
