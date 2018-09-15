@@ -27,7 +27,7 @@ p {
 .tabs {
 	display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -123,13 +123,13 @@ nav {
   height: 75px;
   background-color: darkgray;
   margin: 20px auto;
-  width: 80%;
+  width: 78.5%;
 }
 
 nav .nav_links_container {
   display: flex;
   justify-content: space-around;
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 
