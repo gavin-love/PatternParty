@@ -12,11 +12,11 @@ h1, span, h3 {
 }
 
 header {
+  background-color: #3F3244;
   display: flex;
   justify-content: space-between; 
   align-items: center;
   height: 15%;
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -24,10 +24,40 @@ p {
   width: 75%;
 }
 
+main {
+  margin-bottom: 150px;
+}
+.pattern, .name {
+  color: #F2F2F2;
+  margin: 0 60px;
+}
+
+.party {
+  color: #34D1D1;
+  margin-left: 5px;
+}
+
+.hr_container {
+  margin: 40px 0 60px 0;
+}
+
+.break {
+  margin: 20px 25px 20px 61px;
+}
+
+hr, .break {
+  color: #D1D2D3;
+  display: inline-block;
+}
+
+hr {
+  width: calc(80% - 8rem);
+}
+
 .tabs {
 	display: flex;
   flex-wrap: wrap;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -42,7 +72,7 @@ p {
 
 .img {
   width: 20rem;
-  height: 100%;
+  height: 90%;
   background-image: url('./images/image.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -50,38 +80,54 @@ p {
   margin: 0 1rem 0 1rem;
 }
 .tabs label {
-	order: 1; 
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-  background: lightgrey;
-  width: calc(19% - 15px);
+  order: 1;
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+  display: block;
+  line-height: 3;
+  text-align: center;
+  background: #F2F2F2;
+  flex-grow: 2;
 }
 .tabs .tab {
   order: 2;
   flex-grow: 1;
+  border: 1px solid lightgray;
+  border-top: none;
 	width: 100%;
 	display: none;
-  padding: 1rem 1rem 1rem 0;
-  background: #fff;
+  padding: 2rem 1rem;
+  background: white;
   height: 400px;
 }
 .tabs input[type="radio"] {
 	display: none;
 }
 .tabs input[type="radio"]:checked + label {
-	background: darkgrey;
+  background: white;
+  border: 1px solid lightgray;
+  border-bottom: none;
 }
 .tabs input[type="radio"]:checked + label + .tab {
 	display: block;
+}
+
+.view_code {
+  width: 25%;
+  height: 50px;
+  background-color: #2F2235;
+  color: white;
+  font-size: 25px;
+  margin: 70px auto 0 auto;
+  display: block;
 }
 
 /* ----------flexible cards----------------------- */
 .flexible_cards {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
+  width: 81.5%;
+  margin: 0 auto 60px auto;
 }
 
 .cards {
@@ -120,10 +166,16 @@ p {
 
 nav {
   display: flex;
-  height: 75px;
-  background-color: darkgray;
+  height: 85px;
+  background-color: #D1D2D3;
   margin: 20px auto;
-  width: 78.5%;
+  width: 80%;
+}
+
+.search {
+  height: 30px;
+  width: 200px;
+  text-indent: 40px;
 }
 
 nav .nav_links_container {
@@ -136,7 +188,12 @@ nav .nav_links_container {
 nav .nav_links {
   display: flex;
   justify-content: space-evenly;
+  line-height: 2.5;
   width: 90%;
+}
+
+.triggerToggle {
+  display: none;
 }
 
 @media (max-width: 70em) {
@@ -148,6 +205,10 @@ nav .nav_links {
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem;
+  }
+
+  hr {
+  width: calc(80% - 11rem);
   }
 }
 
@@ -174,16 +235,33 @@ nav .nav_links {
   flex-direction: column;
   justify-content: space-between;
   width: 85%;
-  margin: auto 0 auto 12%;
+  margin: auto;
   }
 
   nav .nav_links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 5px;
   }
 
   a {
     display: none;
+  }
+
+    hr {
+    width: calc(80% - 13rem);
+  }
+
+  .search {
+    width: 60%;
+    margin: 5px auto;
+  }
+
+  .triggerToggle {
+    height: 60%;
+    width: 7%;
+    margin: auto;
+    display: block;
   }
 }
 
@@ -199,9 +277,15 @@ nav .nav_links {
   .tabs .tab {
     height: 550px;
   }
+
   p {
     height: 200px;
     overflow-y: scroll;
+  }
+
+      hr {
+    /* width: calc(80% - 16rem); */
+    display: none;
   }
 
   ::-webkit-scrollbar {
@@ -209,6 +293,9 @@ nav .nav_links {
     background: transparent;
   }
 
+  nav {
+    height: 125px;
+  }
   nav .nav_links {
     display: flex;
     flex-direction: column;
