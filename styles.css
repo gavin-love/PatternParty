@@ -166,7 +166,7 @@ hr {
 
 nav {
   display: flex;
-  height: 85px;
+  height: 100px;
   background-color: #D1D2D3;
   margin: 20px auto;
   width: 80%;
@@ -176,6 +176,12 @@ nav {
   height: 30px;
   width: 200px;
   text-indent: 40px;
+  background-image: url('./images/search.png');
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+.search:hover {
+  cursor: pointer;
 }
 
 nav .nav_links_container {
@@ -196,6 +202,11 @@ nav .nav_links {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width: 70em) {
   .tabs .tab,
   .tabs label {
@@ -209,6 +220,12 @@ nav .nav_links {
 
   hr {
   width: calc(80% - 11rem);
+  }
+}
+
+@media (max-width: 800px) {
+  a {
+    display: none;
   }
 }
 
@@ -244,25 +261,15 @@ nav .nav_links {
     margin-bottom: 5px;
   }
 
-  a {
-    display: none;
-  }
-
     hr {
     width: calc(80% - 13rem);
   }
 
   .search {
     width: 60%;
-    margin: 5px auto;
+    margin: 5px 0 5px 14.5%;
   }
 
-  .triggerToggle {
-    height: 60%;
-    width: 7%;
-    margin: auto;
-    display: block;
-  }
 }
 
 @media (max-width: 50em) {
@@ -294,12 +301,19 @@ nav .nav_links {
   }
 
   nav {
-    height: 125px;
+    height: 175px;
   }
   nav .nav_links {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .triggerToggle {
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    display: block;
   }
 }
 
