@@ -122,6 +122,10 @@ hr {
   display: block;
 }
 
+.view_code a {
+  color: white;
+}
+
 /* ----------flexible cards----------------------- */
 .flexible_cards {
   display: flex;
